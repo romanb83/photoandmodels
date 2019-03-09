@@ -18,7 +18,7 @@ Route::get('/',
 	});
 
 Route::get('/{cetegory}','UserController@showAll')->name('category'); //Показывает всех пользователей в категории
-Route::get('/{category}/{id}','UserController@showUser')->name('user'); //Показывает конкретного пользователя в категории
+Route::get('/{category}/{id}','UserController@showUser')->name('category.user'); //Показывает конкретного пользователя в категории
 Route::post('/add_user','UserController@addUser')->name('adduser'); //Добавляет пользователя
 
 /*Route::group(['prefix'=>'user'],
